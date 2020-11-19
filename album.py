@@ -43,6 +43,46 @@ figu = random.randint(1,6)
 
 print("tu figurita es la número: % s" % (figu))
 
+##2 
+
+def comprar_figus():
+    figu = random.randint(1,6)
+    print("tu figurita es la número: % s" % (figu))
+    return figu
+
+def completar_album():
+    album = set()
+    figus_compradas = 0
+    album_lleno = False
+    while not(album_lleno):
+        nueva_figu = comprar_figus()
+        album.add(nueva_figu)
+        album_lleno = len(album) == 6
+        figus_compradas += 1
+    print("compraste % s figuritas" % (figus_compradas))
+    
+completar_album()
+
+##3
+def comprar_figusII(n):
+    figu = random.randint(1,n)
+    print("tu figurita es la número: % s" % (figu))
+    return figu
+
+def completar_albumII(n):
+    album = set()
+    figus_compradas = 0
+    album_lleno = False
+    while not(album_lleno):
+        nueva_figu = comprar_figusII(n)
+        album.add(nueva_figu)
+        album_lleno = len(album) == n
+        figus_compradas += 1
+    print("compraste % s figuritas" % (figus_compradas))
+    
+completar_albumII(350) 
+
+
 
 
 
