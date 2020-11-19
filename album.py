@@ -79,8 +79,6 @@ def completar_albumII(n):
         album_lleno = len(album) == n
         figus_compradas += 1
     print("compraste % s figuritas" % (figus_compradas))
-    
-completar_albumII(350) 
 
 
 
